@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+  
+
+  <div class="site-wrapper">
+    <video autoplay muted loop id="myVideo">
+      <source src="cars.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="site-wrapper-inner">
+      <div class="container">
+        <div class="masthead clearfix">
+          <div class="container inner">
+            <nav>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#" class="myButton">@Html.ActionLink("Admin View", "Index", "Admin") &raquo;</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Get Your Car Insurance Quote Today!</h1>
+          <p class="lead">
+            <a href="#" class="myButton">@Html.ActionLink("Click Here For Quote", "Create", "Insuree") &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

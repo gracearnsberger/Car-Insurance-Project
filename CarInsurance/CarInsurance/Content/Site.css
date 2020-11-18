@@ -1,0 +1,290 @@
+﻿
+/*a,
+a:focus,
+a:hover {
+    color: #fff;
+    background-color: lightslategrey;
+    padding: 1px 6px;
+}*/
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focs {
+    color: #333;u
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+h1 {
+    z-index: 300;
+    color: lightcyan;
+    text-shadow: 3px 3px black;
+}
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    z-index: 30;
+    color: black;
+}
+
+.thisButton {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    color: black;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+/*
+ * Header
+ */
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+
+    .masthead-nav > li + li {
+        margin-left: 20px;
+    }
+
+    .masthead-nav > li > a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff; /* IE8 proofing */
+        border-bottom: 2px solid transparent;
+    }
+
+        .masthead-nav > li > a:hover,
+        .masthead-nav > li > a:focus {
+            background-color: transparent;
+            border-bottom-color: #a9a9a9;
+            border-bottom-color: rgba(255,255,255,.25);
+        }
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .masthead-nav {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 276px 100px;
+}
+
+    .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+}
+
+.lead {
+    width: auto;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border: 3px solid #161616;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    background-color: lightcyan;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    background-color: #1e62d0;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.edit-container {
+    background-color: darkgrey;
+}
+
+.back-to-list {
+    width: auto;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border: 3px solid #161616;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    background-color: lightcyan;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.admin-index-container {
+    text-align: center;
+    color: black;
+    background-color: lightcyan;
+    position: absolute;
+    opacity: 0.75;
+    margin: 200px 500px 200px 500px;
+}
+.admin-index-container th {
+    font-weight: bold;
+    text-align: match-parent;
+}
+
+.container.body-content {
+    position: relative;
+}
+
+.create-home {
+    background-color: darkgrey;
+}
+
+.admin-details {
+    background-color: darkgrey;
+    text-align: center;
+    line-height: 25px;
+}
+
+    .admin-details-display dt{
+        font-weight: bold;
+        text-align: match-parent;
+    }
+
+        .admin-details-display dd {
+            text-align: center;
+            margin-left: 1px;
+        }
+
+.delete-container-index {
+    text-align: center;
+    line-height: 25px;
+    background-color: darkgray;
+}
+
+    .admin-delete-display dt {
+        font-weight: bold;
+        text-align: match-parent;
+    }
+
+        .admin-delete-display dd {
+            text-align: center;
+            margin-left: 1px;
+        }
+
+.insuree-create-container {
+    background-color: darkgrey;
+}
+
+.insuree-index-container {
+    background-color: darkgray;
+}
+
+.insuree-edit-container {
+    background-color: darkgray;
+}
+
+.insuree-details-container {
+    background-color: darkgray;
+    line-height: 25px;
+}
+
+.insuree-details dt {
+    font-weight: bold;
+    text-align: match-parent;
+}
+    .insuree-details dd {
+        text-align: center;
+        margin-left: 1px;
+    }
+
+.insuree-delete-container {
+    background-color: darkgray;
+    line-height: 25px;
+}
+
+.insuree-delete-container dt {
+    font-weight: bold;
+    text-align: match-parent;
+}
+
+    .insuree-delete-container dd {
+        text-align: center;
+        margin-left: 1px;
+    }

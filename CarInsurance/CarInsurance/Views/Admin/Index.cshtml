@@ -1,0 +1,54 @@
+﻿@model IEnumerable<CarInsurance.Models.Insuree>
+  
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="cars.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="admin-index-container">
+      @{
+        ViewBag.Title = "Index";
+      }
+
+
+      <h2>Index</h2>
+      <p class="back-to-list">
+        @Html.ActionLink("Create New", "Create")
+      </p>
+        <table class="table">
+          <tr>
+            <div class="table-header">
+              <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+              </th>
+              <th>
+                @Html.DisplayNameFor(model => model.LastName)
+              </th>
+              <th>
+                @Html.DisplayNameFor(model => model.EmailAddress)
+              </th>
+            </div>
+          </tr>
+      @foreach (var item in Model)
+      {
+        <tr>
+          <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+          </td>
+          <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+          </td>
+          <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+          </td>
+          <td class="back-to-list">
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+          </td>
+        </tr>
+      }
+
+      </table>
+</body>
+  </div>
